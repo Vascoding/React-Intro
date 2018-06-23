@@ -1,0 +1,38 @@
+
+.todoform {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.todoname {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tododescription {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+textarea {
+    margin: 0px;
+    width: 204px;
+    height: 150px;
+}
+
+.list {
+    background: #e2e4e6;
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 140px;
+}
