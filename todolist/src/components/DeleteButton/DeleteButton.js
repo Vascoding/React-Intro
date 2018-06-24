@@ -1,6 +1,4 @@
-import React from 'react'
-
-
+import React from 'react';
 
 class DeleteButton extends React.Component {
   onDelete(e) {

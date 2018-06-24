@@ -1,6 +1,7 @@
 import Todo from './Todo/Todo'
 import DeleteButton from './DeleteButton/DeleteButton'
-import AddTodo from './AddTodo/AddTodo'
+import AddButton from './AddButton/AddButton'
+import TodoForm from './TodoForm/TodoForm'
 
 
-export const CMP = { Todo, AddTodo, DeleteButton }
+export const CMP = { Todo, AddButton, DeleteButton, TodoForm }
