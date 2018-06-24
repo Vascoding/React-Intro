@@ -1,4 +1,7 @@
 import React from 'react'
+import './Todo.css';
+import DeleteButton from '../DeleteButton/DeleteButton';
+import AddTodo from '../AddTodo/AddTodo';
 
 class Todo extends React.Component {
   constructor(props) {
@@ -9,7 +12,6 @@ class Todo extends React.Component {
     this.onChange = this.onChange.bind(this)
 
     this.onSubmit = this.onSubmit.bind(this)
-    this.onSubmit.preventDefault();
   }
 
   onChange(e) {
@@ -23,10 +25,6 @@ class Todo extends React.Component {
     this.setState({ list: newList })
   }
 
-  onDelete(e) {
-    e.target.parentNode.remove()
-  }
-
   render() {
     let list = this.state.list.map((t, i) => {
       return (
@@ -35,7 +33,7 @@ class Todo extends React.Component {
           <br />
           <div className="tododescription">{t.description}</div>
           <br />
-          <button type="button" onClick={this.onDelete}>Delete</button>
+          <DeleteButton />
           <br />
           <hr />
         </div>
@@ -54,7 +52,7 @@ class Todo extends React.Component {
             <textarea onChange={this.onChange} type="text" name="description" value={this.state.description} rows="10"></textarea>
           </div>
           <br />
-          <button type="button" onClick={this.onSubmit}>Add ToDo</button>
+          <AddTodo name="Add ToDo" onClick={this.onSubmit} />
         </form>
         <div className="list">{list}</div>
       </div>
