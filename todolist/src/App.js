@@ -8,7 +8,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome To Your To Do List</h1>
         </header>
         <div><CMP.Todo /></div>
