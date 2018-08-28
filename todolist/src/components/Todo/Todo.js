@@ -24,6 +24,8 @@ class Todo extends React.Component {
     let newList = this.state.list;
     newList.push({ name: this.state.name, description: this.state.description });
     this.setState({ list: newList });
+    e.target.parentNode['name'].value = '';
+    e.target.parentNode['description'].value = '';
   }
 
   render() {
